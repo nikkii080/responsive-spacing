@@ -1,0 +1,763 @@
+@charset "utf-8";
+// ================================
+// CSS information
+//  file name  :responsive-spacing.scss
+//  style info :余白用style
+// ================================
+
+//余白sizeの出力（各breakpointごとに同サイズで出力
+//.l-space-pt0
+.l-space-pt0 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 96px, $spMax: 280px
+	);
+}
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt0 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 96px, $spMax: 280px
+			);
+		}
+	}
+}
+//.l-space-pt1
+.l-space-pt1 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 64px, $spMax: 168px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt1 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 64px, $spMax: 168px
+			);
+		}
+	}
+}
+//.l-space-pt2
+.l-space-pt2 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 48px, $spMax: 112px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt2 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 48px, $spMax: 112px
+			);
+		}
+	}
+}
+//.l-space-pt3
+.l-space-pt3 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 40px, $spMax: 80px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt3 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 40px, $spMax: 80px
+			);
+		}
+	}
+}
+//.l-space-pt4
+.l-space-pt4 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 32px, $spMax: 56px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt4 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 32px, $spMax: 56px
+			);
+		}
+	}
+}
+//.l-space-pt5
+.l-space-pt5 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 20px, $spMax: 32px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt5 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 20px, $spMax: 32px
+			);
+		}
+	}
+}
+//.l-space-pt6
+.l-space-pt6 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 16px, $spMax: 24px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt6 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 16px, $spMax: 24px
+			);
+		}
+	}
+}
+//.l-space-pt7
+.l-space-pt7 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 12px, $spMax: 16px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt7 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 12px, $spMax: 16px
+			);
+		}
+	}
+}
+//.l-space-pt8
+.l-space-pt8 {
+	@include responsiveSizing(
+		"padding-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 8px, $spMax: 8px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt8 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-top",
+				$bpLower, $bpUpper,
+				$spMin: 8px, $spMax: 8px
+			);
+		}
+	}
+}
+
+//.l-space-pb0
+.l-space-pb0 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 96px, $spMax: 280px
+	);
+}
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt0 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 96px, $spMax: 280px
+			);
+		}
+	}
+}
+//.l-space-pb1
+.l-space-pb1 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 64px, $spMax: 168px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt1 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 64px, $spMax: 168px
+			);
+		}
+	}
+}
+//.l-space-pb2
+.l-space-pb2 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 48px, $spMax: 112px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt2 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 48px, $spMax: 112px
+			);
+		}
+	}
+}
+//.l-space-pb3
+.l-space-pb3 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 40px, $spMax: 80px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt3 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 40px, $spMax: 80px
+			);
+		}
+	}
+}
+//.l-space-pb4
+.l-space-pb4 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 32px, $spMax: 56px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt4 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 32px, $spMax: 56px
+			);
+		}
+	}
+}
+//.l-space-pb5
+.l-space-pb5 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 20px, $spMax: 32px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt5 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 20px, $spMax: 32px
+			);
+		}
+	}
+}
+//.l-space-pb6
+.l-space-pb6 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 16px, $spMax: 24px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt6 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 16px, $spMax: 24px
+			);
+		}
+	}
+}
+//.l-space-pb7
+.l-space-pb7 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 12px, $spMax: 16px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt7 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 12px, $spMax: 16px
+			);
+		}
+	}
+}
+//.l-space-pb8
+.l-space-pb8 {
+	@include responsiveSizing(
+		"padding-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 8px, $spMax: 8px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pb8 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"padding-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 8px, $spMax: 8px
+			);
+		}
+	}
+}
+
+//.l-space-mt0
+.l-space-mt0 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 96px, $spMax: 280px
+	);
+}
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt0 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 96px, $spMax: 280px
+			);
+		}
+	}
+}
+//.l-space-mt1
+.l-space-mt1 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 64px, $spMax: 168px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt1 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 64px, $spMax: 168px
+			);
+		}
+	}
+}
+//.l-space-mt2
+.l-space-mt2 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 48px, $spMax: 112px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt2 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 48px, $spMax: 112px
+			);
+		}
+	}
+}
+//.l-space-mt3
+.l-space-mt3 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 40px, $spMax: 80px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt3 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 40px, $spMax: 80px
+			);
+		}
+	}
+}
+//.l-space-mt4
+.l-space-mt4 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 32px, $spMax: 56px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt4 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 32px, $spMax: 56px
+			);
+		}
+	}
+}
+//.l-space-mt5
+.l-space-mt5 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 20px, $spMax: 32px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt5 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 20px, $spMax: 32px
+			);
+		}
+	}
+}
+//.l-space-mt6
+.l-space-mt6 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 16px, $spMax: 24px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt6 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 16px, $spMax: 24px
+			);
+		}
+	}
+}
+//.l-space-mt7
+.l-space-mt7 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 12px, $spMax: 16px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt7 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 12px, $spMax: 16px
+			);
+		}
+	}
+}
+//.l-space-mt8
+.l-space-mt8 {
+	@include responsiveSizing(
+		"margin-top",
+		$bpLower,
+		$bpUpper,
+		$spMin: 8px, $spMax: 8px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt8 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-top",
+				$bpLower, $bpUpper,
+				$spMin: 8px, $spMax: 8px
+			);
+		}
+	}
+}
+
+//.l-space-mb0
+.l-space-mb0 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 96px, $spMax: 280px
+	);
+}
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt0 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 96px, $spMax: 280px
+			);
+		}
+	}
+}
+//.l-space-mb1
+.l-space-mb1 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 64px, $spMax: 168px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt1 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 64px, $spMax: 168px
+			);
+		}
+	}
+}
+//.l-space-mb2
+.l-space-mb2 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 48px, $spMax: 112px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt2 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 48px, $spMax: 112px
+			);
+		}
+	}
+}
+//.l-space-mb3
+.l-space-mb3 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 40px, $spMax: 80px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt3 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 40px, $spMax: 80px
+			);
+		}
+	}
+}
+//.l-space-mb4
+.l-space-mb4 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 32px, $spMax: 56px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt4 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 32px, $spMax: 56px
+			);
+		}
+	}
+}
+//.l-space-mb5
+.l-space-mb5 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 20px, $spMax: 32px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt5 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 20px, $spMax: 32px
+			);
+		}
+	}
+}
+//.l-space-mb6
+.l-space-mb6 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 16px, $spMax: 24px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt6 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 16px, $spMax: 24px
+			);
+		}
+	}
+}
+//.l-space-mb7
+.l-space-mb7 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 12px, $spMax: 16px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pt7 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 12px, $spMax: 16px
+			);
+		}
+	}
+}
+//.l-space-mb8
+.l-space-mb8 {
+	@include responsiveSizing(
+		"margin-bottom",
+		$bpLower,
+		$bpUpper,
+		$spMin: 8px, $spMax: 8px
+	);
+}
+
+@each $key, $value in $breakpoints {
+	.l-space-#{$key}-pb8 {
+		@media (max-width: $value) {
+			@include responsiveSizing(
+				"margin-bottom",
+				$bpLower, $bpUpper,
+				$spMin: 8px, $spMax: 8px
+			);
+		}
+	}
+}

@@ -1,0 +1,21 @@
+$breakpoints: (
+	"sm": 767px,
+	"md": 991px
+) !default;
+
+// $bpLower SP時サイズ
+// $bpUpper PC時サイズ
+$bpLower: 375px;
+$bpUpper: 1600px;
+
+
+// 幅に応じて伸び縮みする余白
+// $property 値を指定するプロパティ
+// $spMin 値の下限
+// $spMax 値の上限
+@mixin responsiveSizing($property, $bpLower, $bpUpper, $spMin, $spMax) {
+	$a: math.div(100 * $spMax - $spMin, $bpUpper - $bpLower);
+	$b: $spMin - math.div($bpLower, 100) * $a;
+	#{$property}: $spMin; // clamp()に対応してないブラウザ用
+	#{$property}: clamp(#{$spMin}, calc(#{$a}vw + #{$b}), #{$spMax});
+}
