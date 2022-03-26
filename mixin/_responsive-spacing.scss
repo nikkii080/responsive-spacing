@@ -14,8 +14,8 @@ $bpUpper: 1600px;
 // $spMin 値の下限
 // $spMax 値の上限
 @mixin responsiveSizing($property, $bpLower, $bpUpper, $spMin, $spMax) {
-	$a: math.div(100 * $spMax - $spMin, $bpUpper - $bpLower);
-	$b: $spMin - math.div($bpLower, 100) * $a;
+	$a: calc(100 * ($spMax - $spMin) / ($bpUpper - $bpLower));
+	$b: $spMin - calc($bpLower / 100) * $a;
 	#{$property}: $spMin; // clamp()に対応してないブラウザ用
 	#{$property}: clamp(#{$spMin}, calc(#{$a}vw + #{$b}), #{$spMax});
 }
